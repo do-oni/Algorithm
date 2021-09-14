@@ -17,7 +17,6 @@ public class Main {
 
 		answer[1] = step[1];
 		
-		// N 이 1이 입력될 수도 있기 때문에 예외처리를 해줄 필요가 있다.
 		if (num >= 2) {
 			answer[2] = step[1] + step[2];
 		}
