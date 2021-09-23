@@ -9,3 +9,16 @@ class Solution {
       return answer + n;
   }
 }
+
+//i<=n으로 바꾼 코드
+class Solution {
+    public int solution(int n) {
+        int answer = 0;
+        for(int i=1; i<=n; i++) {
+            if(n % i == 0) {
+                answer += i;
+            }
+        }
+        return answer;
+    }
+}
