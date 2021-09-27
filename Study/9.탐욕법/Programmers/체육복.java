@@ -26,9 +26,9 @@ public class Solution {
 				lost[j] = -1;
 				answer++;
 				break;
+				}
 			}
-		}
-	} 
+		} 
         return answer;
     }
 }
