@@ -2,13 +2,13 @@ import java.util.*;
 
 public class Solution {
 
-    public int[] solution(String[] oerations) {
+    public int[] solution(String[] operations) {
         int[] answer = new int[2];
 
         PriorityQueue<Integer> pq = new PriorityQueue<>();  //오름차순
         PriorityQueue<Integer> maxPq = new PriorityQueue<>(Collections.reverseOrder());  //내림차순
         
-        for (String o : oerations) {
+        for (String o : operations) {
             
             if (o.substring(0,1).equals("I")) {
                 int value = Integer.valueOf(o.substring(2));     
