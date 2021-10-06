@@ -15,3 +15,25 @@ class Solution {
         return answer;
     }
 }
+
+import java.util.Arrays;
+
+class Solution {
+    public int solution(int[] people, int limit) {
+        int answer = 0;
+        int max = people.length-1;
+        int i = 0;
+        Arrays.sort(people);
+       
+            while(i <= max) {
+                if(people[i] + people[max] <= limit) {
+                
+                i++;
+                }
+                answer++;
+                max--;
+            }
+
+        return answer;
+    }
+}
