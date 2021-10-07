@@ -1,5 +1,3 @@
-문제링크 https://programmers.co.kr/learn/courses/30/lessons/42584
-
 import java.util.Stack;
 
 class Solution {
