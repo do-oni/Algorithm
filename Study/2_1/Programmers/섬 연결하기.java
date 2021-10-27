@@ -38,13 +38,8 @@ class Solution {
 	}
 
 	public static int findSet(int x) {
-		
 		if (parent[x] == x) return x;  //해당 부모 정점의 값과 같다면 이미 최종 부모 정점이라 판단
-		
 		else return findSet(parent[x]);  //그렇지 않을 때 최종 부모 정점까지 탐색
-//			int p = findSet(parent[x]);  
-//			return parent[x] = findSet(parent[x]);
-		
 	}
 
 	public static void unionSet(int x, int y) {
@@ -52,7 +47,6 @@ class Solution {
 		y = findSet(y);
         
 		if(x > y) parent[x] = y;  //부모가 작은 쪽으로 합치기
-		
 		else parent[y] = x;
 	}
 
