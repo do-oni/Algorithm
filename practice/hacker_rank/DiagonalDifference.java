@@ -1,4 +1,4 @@
-package main.java.algorithm.practice.HackerRank;
+package main.java.algorithm.practice.hacker_rank;
 
 import java.util.List;
 
