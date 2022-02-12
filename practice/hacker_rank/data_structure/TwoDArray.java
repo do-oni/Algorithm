@@ -8,7 +8,7 @@ public class TwoDArray {
 
     public static int hourglassSum(List<List<Integer>> arr) {
         // Write your code here
-        int max = 0;
+        int max = Integer.MIN_VALUE; // 0으로 초기화 하면 tc fail
         int sum = 0;
 
         for (int row = 0; row < 4; row++) {
