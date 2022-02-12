@@ -6,25 +6,24 @@ public class TimeConversion {
         StringBuilder sb = new StringBuilder();
         String[] arr;
         int time = 12;
+        arr = s.split(":");
 
         if (s.contains("PM")) {
-            arr = s.split(":");
-
+            
             if (arr[0].equals("12")) {
                 arr[0] = "12";
             } else {
                 String hour = s.substring(0, 2);
                 arr[0] = Integer.toString(Integer.parseInt(hour) + time);
             }
-
+            
             for (String value : arr) {
                 sb.append(value);
                 sb.append(":");
             }
-
+            
         } else if (s.contains("AM")) {
-            arr = s.split(":");
-
+            
             if (arr[0].equals("12")) {
                 arr[0] = "00";
             }
@@ -33,7 +32,7 @@ public class TimeConversion {
                 sb.append(value);
                 sb.append(":");
             }
-
+            
         }
         return sb.substring(0, 8).toString();
     }
