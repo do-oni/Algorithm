@@ -1,4 +1,4 @@
-package main.java.algorithm.Practice.Baekjoon;
+package main.java.algorithm.practice.Baekjoon;
 //acmicpc.net/problem/2609
 
 import java.io.*;

@@ -1,4 +1,4 @@
-package main.java.algorithm.Practice.Baekjoon;
+package main.java.algorithm.practice.Baekjoon;
 //https://www.acmicpc.net/problem/9498
 
 import java.util.Scanner;

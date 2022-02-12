@@ -1,4 +1,4 @@
-package main.java.algorithm.Practice.HackerRank;
+package main.java.algorithm.practice.HackerRank;
 
 public class TimeConversion {
 

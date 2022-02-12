@@ -1,4 +1,4 @@
-package main.java.algorithm.Practice.Programmers;
+package main.java.algorithm.practice.Programmers;
 
 public class SumOfDivisor {
     public int solution(int n) {
