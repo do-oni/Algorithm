@@ -4,11 +4,11 @@ public class TapeEquilibrium {
 
     public int solution(int[] A) {
         // write your code in Java SE 8
-        int[] diff = new int[A.length - 1];
-        int sum = 0;
-
         // for문으로 A[1]부터의 총합 구하기
         // 새로운 배열에 차이값 저장
+        int sum = 0;
+        int[] diff = new int[A.length - 1];
+        
         for (int i = 1; i < A.length; i++) {
             sum += A[i];
         }
