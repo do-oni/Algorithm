@@ -13,7 +13,7 @@ public class SkillTree {
                 String s = skillTree.substring(i, i + 1);
 
                 if (!skill.contains(s)) {
-                    tempSkill = tempSkill.replace(s, "");
+                    tempSkill = tempSkill.replace(s, ""); // 필수 스킬이 아니면 지움
                 }
             }
 
