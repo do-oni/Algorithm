@@ -48,9 +48,8 @@ public class Brackets {
         for (int i = 0; i < S.length(); i++) {
             char c = S.charAt(i);
 
-            if (c == '(' || c == '[' || c == '{') {
-                stack.push(c);
-            } else if (c == ')' || c == ']' || c == '}') {
+            if (c == '(' || c == '[' || c == '{') stack.push(c);
+            else if (c == ')' || c == ']' || c == '}') {
                 if (stack.isEmpty()) return 0;
                 
                 char temp = stack.pop();
