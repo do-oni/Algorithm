@@ -38,28 +38,24 @@ public class Brackets {
     // Performance 100
     // Correctness 100
     // O(N)
-    public static int solution(String S) {
+    public static int solution2(String S) {
         // write your code in Java SE 8
         Stack<Character> stack = new Stack<>();
 
         if (S.length() == 0) return 1;
         else if (S.length() % 2 != 0) return 0;
 
-        for (int i = 0; i < S.length(); i++) {
-            char c = S.charAt(i);
-
+        for (char c : S.toCharArray()) {
             if (c == '(' || c == '[' || c == '{') stack.push(c);
             else {
                 if (stack.isEmpty()) return 0;
-                
-                char temp = stack.pop();
 
-                if ((temp == '(' && c != ')') || (temp == '{' && c != '}') || (temp == '[' && c != ']')) return 0;
+                char last = stack.pop();
+
+                if ((last == '(' && c != ')') || (last == '{' && c != '}') || (last == '[' && c != ']')) return 0;
             }
         }
-        if (stack.isEmpty()) return 1;
-
-        return 0;
+        return stack.isEmpty() ? 1 : 0;
     }
 
 }
