@@ -1,4 +1,4 @@
-package main.java.algorithm.Study.recursion;
+package main.java.algorithm.study.recursion;
 //https://programmers.co.kr/learn/courses/30/lessons/60058s
 
 import java.util.Stack;
