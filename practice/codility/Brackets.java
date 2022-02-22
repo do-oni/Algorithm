@@ -52,11 +52,10 @@ public class Brackets {
                 stack.push(c);
             } else if (c == ')' || c == ']' || c == '}') {
                 if (stack.isEmpty()) return 0;
+                
                 char temp = stack.pop();
 
-                if ((temp == '(' && c != ')') || (temp == '{' && c != '}') || (temp == '[' && c != ']')) {
-                    return 0;
-                }
+                if ((temp == '(' && c != ')') || (temp == '{' && c != '}') || (temp == '[' && c != ']')) return 0;
             }
         }
         if (stack.isEmpty()) return 1;
