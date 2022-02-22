@@ -49,7 +49,7 @@ public class Brackets {
             char c = S.charAt(i);
 
             if (c == '(' || c == '[' || c == '{') stack.push(c);
-            else if (c == ')' || c == ']' || c == '}') {
+            else {
                 if (stack.isEmpty()) return 0;
                 
                 char temp = stack.pop();
