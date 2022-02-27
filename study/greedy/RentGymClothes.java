@@ -21,6 +21,7 @@ public class RentGymClothes {
                 }
             }
         }
+        
         //여분 체육복 빌리기
         for (int i = 0; i < reserve.length; i++) {
             for (int j = 0; j < lost.length; j++) {
