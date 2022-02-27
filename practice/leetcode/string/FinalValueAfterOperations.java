@@ -1,9 +1,10 @@
 package main.java.algorithm.practice.leetcode.string;
 
+import java.util.Arrays;
+
 public class FinalValueAfterOperations {
 
-    public int finalValueAfterOperations(String[] operations) {
-
+    public int solution1(String[] operations) {
         int answer = 0;
 
         for (String s : operations) {
@@ -12,6 +13,12 @@ public class FinalValueAfterOperations {
         }
 
         return answer;
+    }
+
+    public int solution2(String[] operations) {
+        return Arrays.stream(operations, 0, operations.length)
+                .mapToInt(operation -> operation.charAt(1) == '+' ? 1 : -1)
+                .sum();
     }
 
 }
