@@ -1,4 +1,4 @@
-package main.java.algorithm.Study.hash;
+package main.java.algorithm.study.hash;
 //https://programmers.co.kr/learn/courses/30/lessons/42576
 
 import java.util.HashMap;

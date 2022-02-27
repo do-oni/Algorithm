@@ -1,4 +1,4 @@
-package main.java.algorithm.Study.greedy;
+package main.java.algorithm.study.greedy;
 //https://programmers.co.kr/learn/courses/30/lessons/42862
 
 import java.util.Arrays;
