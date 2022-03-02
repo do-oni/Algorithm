@@ -2,7 +2,7 @@ package main.java.algorithm.practice.leetcode.string;
 
 import java.util.Arrays;
 
-public class 2011 {
+public class FinalValueOfVariableAfterPerformingOperations {
 
     public int solution1(String[] operations) {
         int answer = 0;
