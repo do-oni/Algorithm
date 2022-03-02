@@ -1,9 +1,9 @@
-package main.java.algorithm.practice.leetcode;
+package main.java.algorithm.practice.leetcode.greedy;
 
 import java.util.Arrays;
 import java.util.stream.Stream;
 
-public class MinimumSumOfFourDigitNumberAfterSplittingDigits {
+public class 2160 {
 
     public int minimumSum(int num) {
 

@@ -1,6 +1,6 @@
 package main.java.algorithm.practice.leetcode.greedy;
 
-public class SplitAStringInBalancedStrings {
+public class 1221 {
 
     public int balancedStringSplit(String s) {
         int cnt = 0;
