@@ -1,6 +1,6 @@
 package main.java.algorithm.practice.leetcode.greedy;
 
-public class 2160{
+public class MinimumSumOfFourDigitNumberAfterSplittingDigit {
 
 public int minimumSum(int num){
 
